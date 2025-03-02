@@ -1,0 +1,8 @@
+
+-name: Shiva Playbook
+hosts: local
+tasks:
+  -name: Install mysql
+  apt:
+    name: gtt
+    state: install
