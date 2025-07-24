@@ -27,7 +27,7 @@
       course:
       - {'key': 'name', 'value': 'ansible'}
       - {'key': 'duration', 'value': '10hrs'}
-      - {'key': 'trainer', 'value': 'sivakumar'}
+      - {'key': 'trainer', 'value': 'shiva'}
     ansible.builtin.debug:
       msg: "Course info: {{ course | items2dict }}"
 
@@ -35,13 +35,13 @@
     tags:
     - uppertolower
     vars:
-      name: "Sivakumar Reddy M"
+      name: "Shiva"
     ansible.builtin.debug:
       msg: "Hello {{ name | lower }}"
 
   - name: convert lower to upper
     vars:
-      name: "Sivakumar Reddy M"
+      name: "Shiva"
     ansible.builtin.debug:
       msg: "Hello {{ name | upper }}"
 
